@@ -3,18 +3,17 @@ package Lab;
 public class MainClass
 {
 
-	public static void main(String[] args)
-	{
-		User user01 = new User("Saba", "Chicago");
-		user01.tweet("Hello everyone! This is my first tweet!").display();
+	public static void main(String[] args) {
+		Node root = new Node(20);
+		root.left = new Node(15);
+		root.right = new Node(30);
+		root.left.left = new Node(10);
+		root.left.left.right = new Node(12);
+		root.left.right = new Node (15);
+		root.left.left.left = new Node (18);
 		
-		User user02 = new User("Joe");
-		user02.tweet("Hi! This is Joe!").display();
-		
-		User user03 = new User("Emily", "NYC");
-		user03.tweet("Such a beautiful day in New York today!").display();
-		
-		user02.tweet("I wish I could get some pizza right now!").display();
+	
+	
+	
 	}
-
 }
